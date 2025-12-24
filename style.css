@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 80px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content h1 {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 1;
+}
+
+.hero-content h1 span {
+  color: #38bdf8;
+}
+
+.hero-content p {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+.hero-actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero-actions a {
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+}
+
+.hero-actions .secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+}
+
+.hero-meta a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+/* STATEMENT */
+.statement {
+  padding: 120px 8%;
+  background: #020617;
+}
+
+.statement h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.statement h2 span {
+  color: #38bdf8;
+}
+
+.statement p {
+  max-width: 700px;
+  margin-top: 25px;
+  color: #cbd5f5;
+  font-size: 1.1rem;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 120px 8%;
+  background: #020617;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #1e293b;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+}
+
+.project-card p {
+  margin: 20px 0;
+  color: #94a3b8;
+}
+
+.project-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.project-actions a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.project-actions a:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  color: #64748b;
+}
