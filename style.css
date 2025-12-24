@@ -489,3 +489,18 @@ footer.show {
   font-size: 0.9rem;
   color: #e0e7ff;
 }
+/* =====================
+   RESPONSIVENESS
+===================== */
+
+/* ---------- TABLETS (<= 1024px) ---------- */
+@media (max-width: 1024px) {
+
+  .header,
+  .section {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .dashboard-overlay {
+    padding: 0 8
