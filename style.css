@@ -139,24 +139,26 @@ body {
   font-weight: 500;
 }
 
+
 /* =====================
-   EDUCATION TIMELINE
+   EDUCATION TIMELINE 
 ===================== */
+
 .timeline {
   position: relative;
-  margin-top: 32px;
-  padding-left: 28px;
+  margin-top: 40px;
+  padding-left: 48px;              /* more space for line + dot */
   border-left: 2px solid #1f2937;
 }
 
 .timeline-item {
-  margin-bottom: 40px;
   position: relative;
+  margin-bottom: 48px;             /* more vertical spacing */
 }
 
 .timeline-dot {
   position: absolute;
-  left: -10px;
+  left: -10px;                     /* aligns dot on the line */
   top: 6px;
   width: 14px;
   height: 14px;
@@ -164,14 +166,20 @@ body {
   border-radius: 50%;
 }
 
+.timeline-content {
+  padding-left: 12px;              /* gap between dot and text */
+}
+
 .timeline-content h3 {
-  font-size: 1.05rem;
   margin-bottom: 6px;
+  font-size: 1.05rem;
 }
 
 .timeline-content p {
   color: #9ca3af;
+  line-height: 1.6;
 }
+
 
 /* =====================
    CERTIFICATIONS
@@ -402,4 +410,82 @@ footer.show {
   display: flex;
   gap: 12px;
   margin-top: 16px;
+}
+
+/* =====================
+   INTERACTIVE DASHBOARD
+===================== */
+.dashboard {
+  position: relative;
+  height: 100vh;
+
+  /* THIS IS THE KEY LINE */
+  background-image: url("./photo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay so text is readable */
+.dashboard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.6);
+  z-index: 1;
+}
+
+/* Content layer */
+.dashboard-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+/* LEFT CONTENT */
+.dashboard-left h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.dashboard-tagline {
+  margin: 14px 0 30px;
+  color: #cbd5f5;
+  max-width: 420px;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* RIGHT CLOCK */
+.dashboard-right {
+  text-align: right;
+}
+
+.clock {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 22px 28px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+#time {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#date {
+  font-size: 0.9rem;
+  color: #e0e7ff;
 }
